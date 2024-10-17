@@ -80,6 +80,10 @@ div.diagpanel-r {
 
     padding: 1rem;
 }
+/* - content div - */
+div.content {
+    padding: 2rem;
+}
 
 
 /* Text */
@@ -89,6 +93,9 @@ p, label {
 
     margin-top: 15px;
     margin-top: 10px;
+}
+p.justified {
+    text-align: justify
 }
 h1 {
     font-family: 'Didact', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -171,4 +178,40 @@ img.centered-fullw {
 
     max-width: 500px;
     margin: auto;
+}
+
+
+@media only screen and (min-width: 1024px) {
+    /* Main */
+    main {
+        width: 60%;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    /* - diagonal panels */
+    div.diagpanel-l {
+        height: 50rem;
+        width: 25rem;
+    }
+
+    /* - flex */
+    div.mf-content-flex {
+        flex-direction: row;
+    }
+    div.mf-content-flex > div {
+        flex-basis: 50%;
+        padding: 2rem;
+    }
+    div.mf-content-flex > div > h2 {
+        display: none;
+    }
+}
+@media only screen and (min-width: 1300px) {
+    div.mf-content-flex > div > ul {
+        font-size: x-large;
+    }
+    div.mf-content-flex > div > ul > li {
+        margin: 2rem 0;
+    }
 }

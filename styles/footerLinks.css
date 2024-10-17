@@ -1,13 +1,14 @@
 /* Footer */
-footer > div > ul.footer-list {
-    list-style-type: none;
-    margin: auto;
+footer > div.footer-list {
+    padding: 1rem;
     overflow: hidden;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
 }
-footer > div > ul.footer-list > li {
-    float: left;
-}
-footer > div > ul.footer-list > li > a {
+footer > div.footer-list > a {
     text-decoration: none;
 
     box-sizing: border-box;
@@ -24,10 +25,10 @@ footer > div > ul.footer-list > li > a {
 
     transition: all 0.25s, color 1s;
 }
-/* footer:hover > div > ul.footer-list > li > a {
+/* footer:hover > div.footer-list > a {
     color: var(--secondary);
 } */
-footer > div > ul.footer-list > li > a:hover {
+footer > div.footer-list > a:hover {
     background-color: var(--secondary);
     color: var(--accent);
 
