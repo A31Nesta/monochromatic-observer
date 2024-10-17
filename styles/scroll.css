@@ -1,0 +1,19 @@
+::-webkit-scrollbar {
+    background-color: black;
+    width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: white;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    background-clip: padding-box;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    /* background: rgb(51, 51, 51); */
+    background-image: url("assets/bar.png");
+    background-size: cover;
+}

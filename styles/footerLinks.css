@@ -1,0 +1,35 @@
+/* Footer */
+footer > div > ul.footer-list {
+    list-style-type: none;
+    margin: auto;
+    overflow: hidden;
+}
+footer > div > ul.footer-list > li {
+    float: left;
+}
+footer > div > ul.footer-list > li > a {
+    text-decoration: none;
+
+    box-sizing: border-box;
+    overflow: hidden;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text);
+
+    padding: 1rem;
+    margin: 0.5rem 0.5rem 0.1rem 0.5rem;
+
+    height: 3rem;
+    border-radius: 1.5rem;
+
+    transition: all 0.25s, color 1s;
+}
+/* footer:hover > div > ul.footer-list > li > a {
+    color: var(--secondary);
+} */
+footer > div > ul.footer-list > li > a:hover {
+    background-color: var(--secondary);
+    color: var(--accent);
+
+    text-shadow: var(--primary) 0 0 2rem;
+}

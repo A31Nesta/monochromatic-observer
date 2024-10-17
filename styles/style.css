@@ -1,0 +1,174 @@
+:root {
+    --text: #a69fa7;
+    --background: #080808;
+    --primary: #c8c1cc;
+    --secondary: #202020;
+    --accent: #ffffff;
+}
+
+/* Body */
+body {
+    background: var(--background);
+
+    /* Background Images */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    /* :) */
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+/* Footer */
+footer {
+    position: relative;
+    padding: 1rem;
+
+    margin-top: 2rem;
+}
+
+/* DIVS */
+div {
+    overflow: hidden;
+}
+footer > div {
+    display: block;
+    margin: auto;
+}
+/* - flex */
+div.mf-content-flex {
+    display: flex;
+    flex-direction: column;
+}
+/* - diagonal panels */
+div.diagpanel-l {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: -10;
+    
+    height: 25rem;
+    width: 12.5rem;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("./assets/diag-panel.png");
+
+    padding: 1rem;
+}
+div.diagpanel-r {
+    box-sizing: border-box;
+    position: absolute;
+
+    right: 0;
+    bottom: 0;
+
+    rotate: 180deg;
+
+    z-index: -10;
+    
+    height: 25rem;
+    width: 12.5rem;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("./assets/diag-panel.png");
+
+    padding: 1rem;
+}
+
+
+/* Text */
+p, label {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text);
+
+    margin-top: 15px;
+    margin-top: 10px;
+}
+h1 {
+    font-family: 'Didact', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    white-space: pre-line;
+
+    background: linear-gradient(40deg, var(--primary), var(--secondary), var(--accent));
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: var(--primary);
+    background-size: 200%;
+
+    font-weight: normal;
+
+    text-align: right;
+    font-size: 2rem;
+
+    margin: 1rem 4rem;
+
+    transition: background-position 1s, text-shadow 2s;
+}
+h1:hover {
+    background-position: 100%;
+    text-shadow: var(--accent) 0 0 2rem;
+}
+h2 {
+    font-family: 'Didact', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--primary);
+
+    text-align: center;
+    font-size: 2rem;
+    font-weight: normal;
+    
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+h3 {
+    font-family: 'Didact', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--secondary);
+
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+ul {
+    color: var(--text);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+li {
+    margin: 0.4rem;
+}
+li.d1 {
+    position: relative;
+    left: 4rem;
+}
+li.d2 {
+    position: relative;
+    left: 3.15rem;
+}
+li.d3 {
+    position: relative;
+    left: 2.4rem;
+}
+li.d4 {
+    position: relative;
+    left: 1.65rem;
+}
+
+footer p {
+    text-align: center;
+    font-size: 0.75rem;
+}
+
+/* Img */
+img.centered-fullw {
+    display: block;
+    
+    width: 100%;
+    height: auto;
+
+    max-width: 500px;
+    margin: auto;
+}
