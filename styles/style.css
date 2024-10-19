@@ -43,9 +43,14 @@ div.mf-content-flex {
     flex-direction: column;
 }
 /* - diagonal panels */
-div.diagpanel-l {
+div.nav-container {
     box-sizing: border-box;
     position: absolute;
+    top: 0;
+    left: 0;
+}
+div.nav-container > div.diagpanel-l {
+    position: relative;
     top: 0;
     left: 0;
 
@@ -57,8 +62,11 @@ div.diagpanel-l {
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url("./assets/diag-panel.png");
-
-    padding: 1rem;
+}
+div.nav-container > nav {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 div.diagpanel-r {
     box-sizing: border-box;
@@ -106,7 +114,7 @@ h1 {
             background-clip: text;
     -webkit-text-fill-color: transparent;
     color: var(--primary);
-    background-size: 200%;
+    background-size: 300%;
 
     font-weight: normal;
 
@@ -186,6 +194,14 @@ img.centered-fullw {
     margin: auto;
 }
 
+header > hr {
+    width: calc(100% - 6.7rem);
+    margin-right: 0px;
+}
+div.title-flex > a.title-link {
+    text-decoration: none;
+}
+
 
 @media only screen and (min-width: 1024px) {
     /* Main */
@@ -196,9 +212,12 @@ img.centered-fullw {
     }
 
     /* - diagonal panels */
-    div.diagpanel-l {
+    div.nav-container > div.diagpanel-l {
         height: 50rem;
         width: 25rem;
+    }
+    header > hr {
+        width: calc(100% - 19rem);
     }
 
     /* - flex */
